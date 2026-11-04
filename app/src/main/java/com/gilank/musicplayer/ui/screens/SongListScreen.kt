@@ -233,10 +233,18 @@ fun SongListItem(
         modifier = Modifier
             .fillMaxWidth()
             .clickable(onClick = onClick)
-            .background(
-                if (isSelected) Brush.horizontalGradient(
-                    listOf(Color(0xFF262013), BlackSurface)
-                ) else Color.Transparent
+            .then(
+                if (isSelected) {
+                    Modifier.background(
+                        brush = Brush.horizontalGradient(
+                            listOf(Color(0xFF262013), BlackSurface)
+                        )
+                    )
+                } else {
+                    Modifier.background(
+                        color = Color.Transparent
+                    )
+                }
             )
             .padding(horizontal = 20.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically
