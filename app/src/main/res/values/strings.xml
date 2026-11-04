@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gilank Music Player</string>
+    <string name="channel_name">Pemutaran Musik Gilank</string>
+    <string name="channel_description">Kontrol pemutaran musik di notifikasi dan layar kunci</string>
+</resources>
